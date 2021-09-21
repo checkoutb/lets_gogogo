@@ -1,0 +1,49 @@
+
+import (
+    "fmt";
+    "sort"
+)
+sort.Ints(inventory)            inventory is []int
+
+
+var arr []int = []int{2,4,6,8,10}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
