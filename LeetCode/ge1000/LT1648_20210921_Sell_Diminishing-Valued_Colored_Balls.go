@@ -138,7 +138,8 @@ func lt1638a(inventory []int, orders int) int {
 }
 
 
-func main() {
+func main123() {
+// func main() {
 
     // var arr []int = []int{2,4,8,6,10}           // ...
     // var ord int = 20
