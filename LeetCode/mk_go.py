@@ -7,6 +7,8 @@ import time
 def mk_go():
     '''
     copy mk_cpp, group by per thousand
+    <2000, group by thousand
+    >=2000, group by 200
     '''
 
     lt_name = ""
@@ -20,11 +22,15 @@ def mk_go():
     t2 = lt_name[0:lt_name.find('.')]
     mainName2 = "LT" + t2.zfill(4) + "_" + time.strftime("%Y%m%d", time.localtime())
     f_name = "/" + mainName2 + "_" + lt_name[lt_name.find('.') + 2 :].replace(" ", "_").replace("'", "") + ".go"
-    dir_name = "ge" + str(int(int(int(t2)/1000)*1000))
-    if int(t2) < 1000:
-        dir_name = "gt0000"
+    dir_name = ""
+    if (int(t2) < 2000):
+        dir_name = "ge" + str(int(int(int(t2)/1000)*1000))
+        if int(t2) < 1000:
+            dir_name = "gt0000"
+    else:
+        dir_name = "ge" + str(int(int(int(t2)/200)*200))
 
-    content = """
+    content = """// package sdq
 package main
 
 import (
@@ -38,6 +44,8 @@ import (
 func main() {
 
     fmt.Println("ans:")
+
+
 }
 """
 
