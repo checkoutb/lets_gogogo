@@ -40,8 +40,8 @@ import (
 
 
 
-//func main_""" + mainName2 + """() {
-func main() {
+func main_""" + mainName2 + """() {
+// func main() {
 
     fmt.Println("ans:")
 

@@ -77,8 +77,8 @@ func dfsa1(s string, chs []rune, idx int, map2 map[rune][]string, ans []string) 
 }
 
 
-//func main_LT0017_20211006() {
-func main() {
+func main_LT0017_20211006() {
+// func main() {
 
     fmt.Println("ans:")
 
