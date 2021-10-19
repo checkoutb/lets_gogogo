@@ -60,8 +60,8 @@ func searchRange(nums []int, target int) []int {
 }
 
 
-// func main_LT0034_20211017() {
-func main() {
+func main_LT0034_20211017() {
+// func main() {
 
     fmt.Println("ans:")
     arr := []int{1}
