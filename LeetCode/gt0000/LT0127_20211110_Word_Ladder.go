@@ -93,8 +93,8 @@ func diffOne127(s1, s2 string) bool {
     return cnt == 1
 }
 
-// func main_LT0127_20211110() {
-func main() {
+func main_LT0127_20211110() {
+// func main() {
 
     fmt.Println("ans:")
 
