@@ -10,7 +10,43 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+var (
+	Zro = -987897897
+)
 
+// 1，2，3,-1,-1,4,5
+func Convert2TreeNode(nodes []int) *TreeNode {
+	ans := &TreeNode{nodes[0],nil,nil}
+	idx := 1
+	arr := []*TreeNode{ ans }
+	for len(arr) > 0 {
+		sz1 := len(arr)
+		for n := 0; n < sz1; n++ {
+			if idx < len(nodes) {
+				t2 := nodes[idx]
+				if t2 != Zro {
+					arr[n].Left = &TreeNode{ nodes[idx], nil, nil }
+					arr = append(arr, arr[n].Left)
+				}
+				idx++
+				if idx < len(nodes) {
+					t2 = nodes[idx]
+					if t2 != Zro {
+						arr[n].Right = &TreeNode{ nodes[idx], nil, nil }
+						arr = append(arr, arr[n].Right)
+					}
+					idx++
+				} else {
+					break
+				}
+			} else {
+				break
+			}
+		}
+		arr = arr[sz1 : ]
+	}
+	return ans
+}
 
 func ShowTreeNode(node *TreeNode) {
 	que := list.New()
