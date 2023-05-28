@@ -53,8 +53,8 @@ func mina1(arr []int) int {
     return ans
 }
 
-// func main_LT2605_20230521() {
-func main() {
+func main_LT2605_20230521() {
+// func main() {
 
     arr := []int{4,1,3}
     arr2 := []int{1,7}
