@@ -1,0 +1,76 @@
+
+### vs code, extension: rest client
+
+### bind uri params
+http://localhost:8080/myName/9f37391a-00f3-f85f-01cc-d4a62f1254b1/
+
+
+### bind query params
+http://localhost:8080/testing3?name=aName&address=shhh&birthday=1990-3-3
+
+
+### to be nested json
+http://localhost:8080/getb?field_a=fa&field_b=fb
+
+#### 2
+http://localhost:8080/getc?field_a=fa&field_c=fc
+
+#### 3
+http://localhost:8080/getd?field_x=fx&field_d=fd
+
+
+###
+http://localhost:8080
+
+####
+http://127.0.0.1:8081
+
+
+### config hook
+http://localhost:8080/testhook
+
+
+### bookable
+http://localhost:8080/bookable?check_in=2024-02-02&check_out=2024-02-03
+
+
+
+### cookie
+http://localhost:8080/cookie
+
+
+
+### route rule
+http://localhost:8080/usr/ckb
+
+#### 2
+http://localhost:8080/usr/asd/
+
+####
+http://localhost:8080/usr/asd/send
+
+
+
+### route group
+http://localhost:8080/v1/asd
+
+####
+http://localhost:8080/v1/qwe2
+
+####
+http://localhost:8080/v2/234
+
+
+### multi server in diff port
+http://localhost:8081
+
+####
+http://localhost:8080
+
+
+### redirect ,  302+200
+http://localhost:8080/redirect1
+
+####   200 + 200
+http://localhost:8080/redirect2
+

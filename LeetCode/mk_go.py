@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+import platform
 
 # mk xxxx.go
 
@@ -68,6 +69,15 @@ func main_""" + mainName2 + """() {
         fd = open(name, mode="a+", encoding='utf-8')
         fd.write(content)
         fd.close()
+
+    # .test is from .gitignore
+    with open("last_go_path.test", 'w', encoding='utf-8') as f:
+        f.write(name)
+
+    # linux, use visual studio code open file
+    if 'linux' in platform.system().lower():
+        print(os.system("code " + name))
+
 
 if __name__ == "__main__":
     mk_go()
